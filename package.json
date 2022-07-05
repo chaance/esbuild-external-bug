@@ -1,0 +1,19 @@
+{
+  "name": "esbuild-external-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild --bundle src/one.jsx --format=esm --external:react* --inject:./src/react-shim.js --outdir=dist --splitting --tree-shaking=true"
+  },
+  "author": "Chance Strickland <hi@chance.dev>",
+  "license": "MIT",
+  "dependencies": {
+    "@react-three/drei": "9.16.0",
+    "@react-three/fiber": "^8.0.27",
+    "esbuild": "0.14.48",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "three": "^0.142.0"
+  }
+}
